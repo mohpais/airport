@@ -1,0 +1,32 @@
+.airport {
+    display: inline-block;
+    text-align: center;
+}
+
+.airport p {
+    margin: 0;
+    font-size: 12px;
+}
+
+.airport .h2 {
+    margin: 0;
+    font-weight: 800;
+}
+
+.plane .airport:first-child::after {
+    content: url('./assets/airplane-clip(80).png');
+    position: absolute;
+    right: -40px;
+    top: 18px;
+}
+
+@media only screen and (max-width: 579px)  {
+    .plane .airport .h2 {
+        font-size: 1.5rem;
+    }
+    .plane .airport:first-child::after {
+        content: url('./assets/airplane-clip(40).png');
+        right: -20px;
+        top: 22px;
+    }
+}
